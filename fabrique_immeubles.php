@@ -2,7 +2,7 @@
 
 /**
  *  Fichier généré par la Fabrique de plugin v6
- *   le 2018-05-09 16:15:27
+ *   le 2018-05-09 17:05:34
  *
  *  Ce fichier de sauvegarde peut servir à recréer
  *  votre plugin avec le plugin «Fabrique» qui a servi à le créer.
@@ -37,8 +37,8 @@ $data = array (
       0 => '',
     ),
     'version' => '1.0.0',
-    'auteur' => 'Rainer',
-    'auteur_lien' => '',
+    'auteur' => 'Rainer Müller',
+    'auteur_lien' => 'https://websimple.be',
     'licence' => 'GNU/GPL',
     'categorie' => 'divers',
     'etat' => 'dev',
@@ -88,6 +88,7 @@ $data = array (
       'genre' => 'masculin',
       'logo' => 
       array (
+        0 => '',
         32 => '',
         24 => '',
         16 => '',
@@ -138,7 +139,7 @@ $data = array (
         0 => 'lang',
         1 => 'id_trad',
       ),
-      'champ_date' => '',
+      'champ_date' => 'date',
       'statut' => 'on',
       'chaines' => 
       array (

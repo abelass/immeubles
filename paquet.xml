@@ -9,7 +9,7 @@
 	schema="1.0.0" 
 >
 	<!--
-		Paquet généré le 2018-05-09 16:15:27
+		Paquet généré le 2018-05-09 17:05:34
 		(Vous pouvez bien entendu supprimer ces commentaires) 
 	-->
 
@@ -17,7 +17,7 @@
 	<!-- Gérer des immeubles -->
 
 	<!-- cette balise peut être présente plusieurs fois s'il y a plusieurs auteurs --> 
-	<auteur>Rainer</auteur>
+	<auteur lien='https://websimple.be'>Rainer Müller</auteur>
 
 	<licence>GNU/GPL</licence>
 

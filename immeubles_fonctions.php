@@ -4,7 +4,7 @@
  *
  * @plugin     Immeubles
  * @copyright  2018
- * @author     Rainer
+ * @author     Rainer Müller
  * @licence    GNU/GPL
  * @package    SPIP\Immeubles\Fonctions
  */

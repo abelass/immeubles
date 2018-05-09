@@ -4,7 +4,7 @@
  *
  * @plugin     Immeubles
  * @copyright  2018
- * @author     Rainer
+ * @author     Rainer Müller
  * @licence    GNU/GPL
  * @package    SPIP\Immeubles\Pipelines
  */
@@ -49,6 +49,7 @@ function immeubles_declarer_tables_objets_sql($tables) {
 			'id_immeuble'        => 'bigint(21) NOT NULL',
 			'titre'              => 'varchar(255) NOT NULL DEFAULT ""',
 			'descriptif'         => 'text NOT NULL DEFAULT ""',
+			'date'               => 'datetime NOT NULL DEFAULT "0000-00-00 00:00:00"',
 			'statut'             => 'varchar(20)  DEFAULT "0" NOT NULL',
 			'lang'               => 'VARCHAR(10) NOT NULL DEFAULT ""',
 			'langue_choisie'     => 'VARCHAR(3) DEFAULT "non"',
@@ -62,7 +63,7 @@ function immeubles_declarer_tables_objets_sql($tables) {
 			'KEY statut'         => 'statut',
 		),
 		'titre' => 'titre AS titre, lang AS lang',
-		 #'date' => '',
+		'date' => 'date',
 		'champs_editables'  => array('titre', 'descriptif'),
 		'champs_versionnes' => array('titre', 'descriptif'),
 		'rechercher_champs' => array("titre" => 8, "descriptif" => 5),
