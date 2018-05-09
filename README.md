@@ -6,7 +6,8 @@ titre, descriptif, statut, champs spécifiques à déterminer,
 
 objets liés:
 les infos extras
-objets_infos_extras champs : titre, statut, descriptif table liés avec quantités
+objets_infos_extras champs : titre, statut, descriptif table liés avec quantités (ajouter chamopx extras inclus via immeubles)
+objets prix pour leur donner un prix
 
 
 disponibilité : plugin disponibilités objets
