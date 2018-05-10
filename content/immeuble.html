@@ -28,8 +28,8 @@
 
 	<aside>
 		[(#REM) Les infos extras]
-		[(#CHEMIN{inclure/objets_informations}|oui)
-		<INCLURE{fond=inclure/objets_informations,objet=information,id_objet=#ID_IMMEUBLE} />
+		[(#CHEMIN{liste/objets_informations.html}|oui)
+		<INCLURE{fond=liste/objets_informations,objet=immeuble,id_objet=#ID_IMMEUBLE,env} />
 		]
 		[(#REM) Gestion du portfolio et des documents ]
 		[(#INCLURE{fond=inclure/documents,id_immeuble})]
