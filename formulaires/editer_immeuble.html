@@ -9,11 +9,15 @@
 		<div class="editer-groupe">
 
 			[(#SAISIE{input, titre, obligatoire=oui,
-				label=<:immeuble:champ_titre_label:>})]
+				label=<:ecrire:info_titre:>})]
 
 			[(#SAISIE{textarea, descriptif,
-				label=<:immeuble:champ_descriptif_label:>,
+				label=<:ecrire:info_descriptif:>,
 				conteneur_class=pleine_largeur, class=inserer_barre_edition, rows=4})]
+
+			[(#SAISIE{textarea, texte,
+				label=<:ecrire:info_texte:>,
+				conteneur_class=pleine_largeur, class=inserer_barre_edition, rows=16})]
 
 			[(#SAISIE{input, chambres,
 				label=<:immeuble:champ_chambres_label:>})]

@@ -1,0 +1,43 @@
+<BOUCLE_content(IMMEUBLES){id_immeuble}>
+<section>
+
+	<header class="cartouche">
+		[(#LOGO_IMMEUBLE|image_reduire{200,200})]
+		<h1 class="#EDIT{titre}">#TITRE</h1>
+	</header>
+
+	<div class="main">
+		[<div class="#EDIT{texte} chapo">(#TEXTE|adaptive_images)</div>]
+
+		[<div class="champ contenu_chambres[ (#CHAMBRES*|strlen|?{'',vide})]">
+			<label><:immeuble:champ_chambres_label:> : </label>
+			<span dir="#LANG_DIR" class="#EDIT{chambres} chambres">(#CHAMBRES)</span>
+		</div>]
+
+		[<div class="champ contenu_lits_simples[ (#LITS_SIMPLES*|strlen|?{'',vide})]">
+			<label><:immeuble:champ_lits_simples_label:> : </label>
+			<span dir="#LANG_DIR" class="#EDIT{lits_simples} lits_simples">(#LITS_SIMPLES)</span>
+		</div>]
+
+		[<div class="champ contenu_lits_doubles[ (#LITS_DOUBLES*|strlen|?{'',vide})]">
+			<label><:immeuble:champ_lits_doubles_label:> : </label>
+			<span dir="#LANG_DIR" class="#EDIT{lits_doubles} lits_doubles">(#LITS_DOUBLES)</span>
+		</div>]
+
+	</div>
+
+	<aside>
+		[(#REM) Les infos extras]
+		[(#CHEMIN{inclure/objets_informations}|oui)
+		<INCLURE{fond=inclure/objets_informations,objet=information,id_objet=#ID_IMMEUBLE} />
+		]
+		[(#REM) Gestion du portfolio et des documents ]
+		[(#INCLURE{fond=inclure/documents,id_immeuble})]
+	</aside>
+
+	<footer>
+		[<div class="notes"><h2><:info_notes:></h2>(#NOTES)</div>]
+	</footer>
+
+</section>
+</BOUCLE_content>
