@@ -9,4 +9,19 @@
 	<span dir="#LANG_DIR" class="#EDIT{descriptif} descriptif">(#DESCRIPTIF)</span>
 </div>]
 
+[<div class="champ contenu_chambres[ (#CHAMBRES*|strlen|?{'',vide})]">
+	<label><:immeuble:champ_chambres_label:> : </label>
+	<span dir="#LANG_DIR" class="#EDIT{chambres} chambres">(#CHAMBRES)</span>
+</div>]
+
+[<div class="champ contenu_lits_simples[ (#LITS_SIMPLES*|strlen|?{'',vide})]">
+	<label><:immeuble:champ_lits_simples_label:> : </label>
+	<span dir="#LANG_DIR" class="#EDIT{lits_simples} lits_simples">(#LITS_SIMPLES)</span>
+</div>]
+
+[<div class="champ contenu_lits_doubles[ (#LITS_DOUBLES*|strlen|?{'',vide})]">
+	<label><:immeuble:champ_lits_doubles_label:> : </label>
+	<span dir="#LANG_DIR" class="#EDIT{lits_doubles} lits_doubles">(#LITS_DOUBLES)</span>
+</div>]
+
 </BOUCLE_immeuble>

@@ -12,7 +12,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'ajouter_lien_immeuble' => 'Ajouter ce immeuble',
 
 	// C
+	'champ_chambres_label' => 'Chambres',
 	'champ_descriptif_label' => 'Déscriptif',
+	'champ_lits_doubles_label' => 'Lits doubles',
+	'champ_lits_simples_label' => 'Lits simples',
 	'champ_titre_label' => 'Titre',
 	'confirmer_supprimer_immeuble' => 'Confirmez-vous la suppression de cet immeuble ?',
 

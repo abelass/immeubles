@@ -2,11 +2,14 @@
 Gestion de d'immeubles
 
 ## Champs
-titre, descriptif, statut, champs spécifiques à déterminer,
+titre, descriptif, statut, chambres, lit double, lit simplechamps spécifiques à déterminer,
 
 objets liés:
-les infos extras
-objets_infos_extras champs : titre, statut, descriptif table liés avec quantités (ajouter chamopx extras inclus via immeubles)
+les infos extras (wifi, lave vaiselle, ...)
+objets_infos_extras champs : titre, statut, descriptif table liés avec quantités
+
+Service extras:
+objets_services_extras
 objets prix pour leur donner un prix
 
 

@@ -2,7 +2,7 @@
 
 /**
  *  Fichier généré par la Fabrique de plugin v6
- *   le 2018-05-09 17:05:34
+ *   le 2018-05-10 08:21:48
  *
  *  Ce fichier de sauvegarde peut servir à recréer
  *  votre plugin avec le plugin «Fabrique» qui a servi à le créer.
@@ -131,6 +131,51 @@ $data = array (
           'saisie' => 'textarea',
           'explication' => '',
           'saisie_options' => 'conteneur_class=pleine_largeur, class=inserer_barre_edition, rows=4',
+        ),
+        2 => 
+        array (
+          'nom' => 'Chambres',
+          'champ' => 'chambres',
+          'sql' => 'int(6) NOT NULL DEFAULT 0',
+          'caracteristiques' => 
+          array (
+            0 => 'editable',
+            1 => 'versionne',
+          ),
+          'recherche' => '',
+          'saisie' => 'input',
+          'explication' => '',
+          'saisie_options' => '',
+        ),
+        3 => 
+        array (
+          'nom' => 'Lits simples',
+          'champ' => 'lits_simples',
+          'sql' => 'int(6) NOT NULL DEFAULT 0',
+          'caracteristiques' => 
+          array (
+            0 => 'editable',
+            1 => 'versionne',
+          ),
+          'recherche' => '',
+          'saisie' => 'input',
+          'explication' => '',
+          'saisie_options' => '',
+        ),
+        4 => 
+        array (
+          'nom' => 'Lits doubles',
+          'champ' => 'lits_doubles',
+          'sql' => 'int(6) NOT NULL DEFAULT 0',
+          'caracteristiques' => 
+          array (
+            0 => 'editable',
+            1 => 'versionne',
+          ),
+          'recherche' => '',
+          'saisie' => 'input',
+          'explication' => '',
+          'saisie_options' => '',
         ),
       ),
       'champ_titre' => 'titre',
