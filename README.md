@@ -2,7 +2,32 @@
 Gestion de d'immeubles
 
 ## Champs
-titre, descriptif, statut, chambres, lit double, lit simplechamps spécifiques à déterminer,
+titre, descriptif, statut,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 objets liés:
 les infos extras (wifi, lave vaiselle, ...)
@@ -18,3 +43,7 @@ disponibilité : plugin disponibilités objets
 
 prix (par saison et durée de séjour -
 probablement via prix objets et prix_objets_periodes)
+
+## to do
+Gérer les lits via infos extras, smnt Infos de base dans immeubles 
+Ajouter table espaces qui serón les espaces d'un immeuble . Champ titre, quantité 
