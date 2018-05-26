@@ -68,8 +68,8 @@ function immeubles_declarer_tables_objets_sql($tables) {
 		),
 		'titre' => 'titre AS titre, lang AS lang',
 		'date' => 'date',
-		'champs_editables'  => array('titre', 'descriptif', 'texte', 'chambres', 'lits_simples', 'lits_doubles'),
-		'champs_versionnes' => array('titre', 'descriptif', 'texte', 'chambres', 'lits_simples', 'lits_doubles'),
+		'champs_editables'  => array('titre', 'descriptif', 'texte', 'chambres'),
+		'champs_versionnes' => array('titre', 'descriptif', 'texte', 'chambres'),
 		'rechercher_champs' => array("titre" => 8, "descriptif" => 5, 'texte' => 5),
 		'tables_jointures'  => array(),
 		'statut_textes_instituer' => array(
