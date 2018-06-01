@@ -50,4 +50,7 @@
 	<pipeline nom="optimiser_base_disparus" inclure="immeubles_pipelines.php" />
 
 	<menu nom="immeubles" titre="immeuble:titre_immeubles" parent="menu_edition" icone="images/immeuble-16.png" action="immeubles" />
+	
+	<chemin path="squelettes" />
+	<chemin path="" />
 </paquet>
