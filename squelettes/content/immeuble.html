@@ -8,28 +8,23 @@
 
 	<div class="main">
 		[<div class="#EDIT{texte} chapo">(#TEXTE|adaptive_images)</div>]
-
-		[<div class="champ contenu_chambres[ (#CHAMBRES*|strlen|?{'',vide})]">
-			<label><:immeuble:champ_chambres_label:> : </label>
-			<span dir="#LANG_DIR" class="#EDIT{chambres} chambres">(#CHAMBRES)</span>
-		</div>]
-
-		[<div class="champ contenu_lits_simples[ (#LITS_SIMPLES*|strlen|?{'',vide})]">
-			<label><:immeuble:champ_lits_simples_label:> : </label>
-			<span dir="#LANG_DIR" class="#EDIT{lits_simples} lits_simples">(#LITS_SIMPLES)</span>
-		</div>]
-
-		[<div class="champ contenu_lits_doubles[ (#LITS_DOUBLES*|strlen|?{'',vide})]">
-			<label><:immeuble:champ_lits_doubles_label:> : </label>
-			<span dir="#LANG_DIR" class="#EDIT{lits_doubles} lits_doubles">(#LITS_DOUBLES)</span>
-		</div>]
-
 	</div>
 
 	<aside>
 		[(#REM) Les infos extras]
 		[(#CHEMIN{liste/objets_informations.html}|oui)
 		<INCLURE{fond=liste/objets_informations,objet=immeuble,id_objet=#ID_IMMEUBLE,env} />
+		]
+		[(#PLUGIN{location_objets}|oui)
+			<p>
+				<a
+					class="btn btn-primary btn-large"
+					href="[(#URL_PAGE{location}
+						|parametre_url{location_objet,spip_immeubles}
+						|parametre_url{id_location_objet,#ID_IMMEUBLE})]">
+					<:objets_location:titre_objets_location:>
+				</a>
+			</p>
 		]
 		[(#REM) Gestion du portfolio et des documents ]
 		[(#INCLURE{fond=inclure/documents,id_immeuble})]
