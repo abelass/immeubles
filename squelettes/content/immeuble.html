@@ -17,11 +17,7 @@
 		]
 		[(#PLUGIN{location_objets}|oui)
 			<p>
-				<a
-					class="btn btn-primary btn-large"
-					href="[(#URL_PAGE{location}
-						|parametre_url{location_objet,spip_immeubles}
-						|parametre_url{id_location_objet,#ID_IMMEUBLE})]">
+				<a class="btn btn-primary btn-large" href="[(#URL_PAGE{location_immeuble}|parametre_url{id_immeuble,#ID_IMMEUBLE})]">
 					<:objets_location:titre_objets_location:>
 				</a>
 			</p>
