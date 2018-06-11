@@ -13,7 +13,7 @@
 	<aside>
 		[(#REM) Les infos extras]
 		[(#CHEMIN{liste/objets_informations.html}|oui)
-		<INCLURE{fond=liste/objets_informations,objet=immeuble,id_objet=#ID_IMMEUBLE,env} />
+			<INCLURE{fond=liste/objets_informations,objet=immeuble,id_objet=#ID_IMMEUBLE,env} />
 		]
 		[(#PLUGIN{location_objets}|oui)
 			<p>
@@ -22,8 +22,6 @@
 				</a>
 			</p>
 		]
-		[(#REM) Gestion du portfolio et des documents ]
-		[(#INCLURE{fond=inclure/documents,id_immeuble})]
 	</aside>
 
 	<footer>
