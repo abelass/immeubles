@@ -3,7 +3,7 @@
  * Options au chargement du plugin Immeubles
  *
  * @plugin     Immeubles
- * @copyright  2018
+ * @copyright  2018 - 2019
  * @author     Rainer Müller
  * @licence    GNU/GPL
  * @package    SPIP\Immeubles\Options
