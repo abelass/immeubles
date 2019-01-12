@@ -18,11 +18,18 @@
 		</tr>
 	</thead>
 	<tbody>
-	<BOUCLE_liste_immeubles(IMMEUBLES){id_mot?}{id_auteur?}{where?}{statut?}{recherche?}{tri #ENV{par,num titre},#GET{defaut_tri}}{par titre}{pagination #ENV{nb,10}}>
+	<BOUCLE_liste_immeubles(IMMEUBLES){id_mot?}{id_auteur?}{where?}{statut?}{recherche?}{tri #ENV{par,num titre},#GET{defaut_tri}}{par titre}{pagination #ENV{nb,10}}{!lang_select}>
 		<tr class="[(#COMPTEUR_BOUCLE|alterner{row_odd,row_even})]">
 			<td class="picto">[(#CHEMIN_IMAGE{immeuble-16.png}|balise_img)]</td>
 			<td class="statut">[(#STATUT|puce_statut{immeuble,#ID_IMMEUBLE})]</td> 
-			<td class="titre principale">[(#LOGO_IMMEUBLE|image_reduire{20,26})]<a href="[(#ID_IMMEUBLE|generer_url_entite{immeuble})]" title="<:info_numero_abbreviation|attribut_html:> #ID_IMMEUBLE">[(#RANG). ]#TITRE</a></td>
+			<td class="titre principale">[(#LOGO_IMMEUBLE|image_reduire{20,26})]
+				<a 
+					href="[(#ID_IMMEUBLE|generer_url_entite{immeuble})]" 
+					title="<:info_numero_abbreviation|attribut_html:> #ID_IMMEUBLE"
+					[hreflang="(#ENV{lang}|=={#LANG}|non|?{#LANG})"]>
+						[(#RANG). ]#TITRE
+				</a>
+			</td>
 			<td class="date secondaire">[(#DATE|affdate_jourcourt)]</td> 
 			<td class="id">[(#AUTORISER{modifier,immeuble,#ID_IMMEUBLE}|?{
 				<a href="[(#URL_ECRIRE{immeuble_edit,id_immeuble=#ID_IMMEUBLE})]">#ID_IMMEUBLE</a>,
